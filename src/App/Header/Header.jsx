@@ -5,7 +5,7 @@ import './Header.scss';
 // this is may commponents
 const Header = () => {
     return (
-        <header className={'Header'}>My Component Header</header>
+        <header className={'Header'}>Component Header</header>
     );
 }
 // every componoyts must be exported
