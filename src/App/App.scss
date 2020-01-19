@@ -1,7 +1,26 @@
+body {
+    background-color: ivory;
+}
+
 .App {
-    width: 800px;
-    border: solid 10px rgb(118, 146, 141);
+   // width: 800px;
+   min-width: 320;
+   max-width: 1000;
+    border: solid 10px rgb(122, 121, 88);
     padding: 20px;
     margin: 25px auto;
+    background-color: rgb(192, 191, 139);
+    //border: solid rgb(145, 151, 58);
+}
 
+@media screen and (min-width:600px) {
+    body {
+        background-color: rgb(196, 196, 189);
+    }
+}
+
+@media screen and (min-width:800px) {
+    body {
+        background-color: rgb(235, 212, 209);
+    }
 }
