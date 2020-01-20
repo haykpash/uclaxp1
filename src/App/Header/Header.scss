@@ -1,28 +1,28 @@
 .Header {
           background: rgb(145, 145, 127); 
-          padding: 20px;  
+          padding: 20px;     
          
-     .menu {
-         background-color: rgb(104, 124, 103);
-         font-size: 20px;
-         text-align: center;
+  .menu {
+        background-color: rgb(56, 55, 55);
 
-         a {
-            text-transform: uppercase;
-             display: inline-block;
-             background: rgb(171, 173, 170);
-             padding: 5px;
-             border: solid black;
-             margin: 20px;
-             border-radius: 5px;
+    a { 
+       font-size: 20px;
+       display: inline-block;
+       color: white;
+       padding: 15px;
+       text-decoration: none;
 
-            &:hover {
-                background-color: rgb(105, 30, 30);
-                color: white;
-                transition: .7s;
-            }
-         }  
-     }
+    &:hover {
+       background-color: rgb(105, 30, 30);
+       color: white;
+       transition: .7s;
+    }
+    } 
+    .menu-right {
+       float: right;
+
+    } 
+  }
 }
 @media screen and (min-width: 600px) {
    .Header {
@@ -31,8 +31,8 @@
           background: rgb(114, 131, 114);
         a {
           color: maroon;
-          background: gray;
           font-style: italic;
+          font-size: 25px;
         }
       }
     }
@@ -40,11 +40,11 @@
 @media screen and (min-width: 800px) {
     .Header {
        .menu {         
-           background: rgb(114, 133, 136);
+          background: rgb(114, 133, 136);
          a {
-           color: rgb(0, 128, 17);
-           background: rgb(81, 51, 88);
+           color: rgb(3, 10, 3);
            font-style: inherit;
+           font-size: 30px;
          }
        }
      }
