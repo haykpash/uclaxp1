@@ -1,6 +1,6 @@
 .Header {
           background: rgb(145, 145, 127); 
-          padding: 20px;     
+          padding: 5px;     
          
   .menu {
         background-color: rgb(56, 55, 55);
@@ -8,12 +8,12 @@
     a { 
        font-size: 20px;
        display: inline-block;
-       color: white;
-       padding: 15px;
+       color: rgb(214, 213, 213);
+       padding: 10px;
        text-decoration: none;
 
     &:hover {
-       background-color: rgb(105, 30, 30);
+       background-color: rgb(90, 90, 90);
        color: white;
        transition: .7s;
     }
