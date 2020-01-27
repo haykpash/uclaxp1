@@ -8,13 +8,11 @@ const Header = () => {
      <header className='Header'>
 
         <div className="menu">   
-            <a href="#menuu">menu</a> 
-            <a id="#logo">logo</a> 
-            <div className="menu-right"> 
-              <a href="#search">search</a>
-              <a href="#registr">register</a>
-              <a href="#bag">bag</a>
-            </div> 
+            
+            <a href="#search"></a>
+            <a href="#registr"></a>
+            <a href="#bag"></a>
+            <a id="#logo">logo</a>         
         </div>
        
      </header>

@@ -1,29 +1,50 @@
 .Nav    { 
     background-color: rgb(179, 185, 162); 
     padding: 20px; 
-    border: solid black;
 
-    .bestsell {
-
+    .menubars {
         display: block;
-        text-align: center;
-        background: rgb(74, 116, 72);
-        text-transform: uppercase;
-        color:black;
-        font-size: 30px;
-        border: solid black;
-        transition: all .7s;
-        border-radius: 10px;
-        
 
-        &:hover {
-            color: rgb(184, 184, 162);
-            background-color: rgb(42, 56, 38);
-            border: solid rgb(74, 116, 72);
+        color: rgb(145, 145, 145);  
+       
+        width: 30px;
+        height: 30px;
+
+        position: absolute;
+        right: 20px;
+        top: 15px;
+
+        svg {
+            width: 100%;
+            height: auto;
+        }
+        &:hover{
+            color: white;          
         }
     }
+
+    .leftmenu {
+
+         .left {      
+            width: 30px;
+            height: 30px;
+            position: absolute;
+         
+            svg {
+              width: 70%;
+              height: auto;
+            }
+            color: rgb(145, 145, 145);  
+        
+            &:hover{
+            color: white;          
+            }
+        }
+            .search { left: 20px; top: 22px; }
+            .registr { left: 70px; top: 22px; }
+            .bag { left:  125px; top: 21px; }
+    }
     .links {
-        background-color: rgb(145, 145, 127);
         text-align: center;
         border-radius: 10px;
         
@@ -34,7 +55,7 @@
            
            display: block;
            padding: 15px;
-           border-radius: 10px;
+           border-radius: 5px;
            margin: 20px;
            font-size: 25px;
 
@@ -57,10 +78,8 @@
 @media screen and (min-width: 600px) {
     .Nav {
         background-color: rgb(134, 155, 117);
-        border-radius: 10px;   
-        .bestsell  {
-            color: maroon;
-        }
+          
+
         .links {
             a {
                 display: inline-block;
@@ -73,9 +92,6 @@
     .Nav {
         background-color: rgb(122, 121, 100);
         
-        .bestsell  {
-            color:white;
-        }
         .links {
             a {
                 display: inline-block;

@@ -1,4 +1,52 @@
 .Main   { 
     background: rgb(145, 145, 127); 
     padding: 20px; 
+
+    min-height: 300px;
+
+    .columns {
+        border: solid 1px;
+        background-color: rgb(80, 78, 78);
+        //padding: 3px;
+
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+        .col {
+            border: solid 1px;
+            padding: 10px;
+            color:  black;
+
+            width: 100%;
+        }
+
+        .col1 { background-color: rgb(188, 194, 154); }
+        .col2 { background-color: rgb(167, 203, 211); }
+        .col3 { background-color: rgb(194, 181, 159); }
+        .col4 { background-color:rgb(139, 184, 161) }
+    }
+
+
+}
+
+@media screen and (min-width: 600px) {
+    .Main{
+        .columns {
+            background-color: rgb(145, 145, 127);
+            .col {
+               width: 45%;
+            }   
+        }     
+    }
+}
+@media screen and (min-width: 800px) {
+    .Main{
+        .columns {
+            background-color: rgb(145, 145, 127);
+            .col {
+               width: 20%;
+            }   
+        }     
+    }
 }
