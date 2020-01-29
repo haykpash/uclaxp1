@@ -1,18 +1,20 @@
 .Nav    { 
-    background-color: rgb(179, 185, 162); 
-    padding: 20px; 
+
+    font-size: 20px;
+    background-color: rgb(203, 204, 200); 
+    padding: 10px; 
 
     .menubars {
-        display: block;
-
-        color: rgb(145, 145, 145);  
-       
+        
         width: 30px;
         height: 30px;
 
         position: absolute;
         right: 20px;
         top: 15px;
+        color: rgb(145, 145, 145); 
+
+        display: block;
 
         svg {
             width: 100%;
@@ -49,14 +51,14 @@
         border-radius: 10px;
         
        a {
-           background-color: rgb(74, 116, 72);
+           background-color: rgb(138, 155, 137);
            color: black;
            
            
            display: block;
-           padding: 15px;
+           padding: 5px;
            border-radius: 5px;
-           margin: 20px;
+           margin: 10px;
            font-size: 25px;
 
 
@@ -78,12 +80,15 @@
 @media screen and (min-width: 600px) {
     .Nav {
         background-color: rgb(134, 155, 117);
-          
+
+          .menubars {
+              display: none;
+          }
 
         .links {
             a {
                 display: inline-block;
-                color: maroon;
+                color: rgb(20, 243, 68);
             }   
         }
     }
@@ -91,7 +96,10 @@
 @media screen and (min-width: 800px) {
     .Nav {
         background-color: rgb(122, 121, 100);
-        
+
+        .menubars{
+            font-size: 40px;
+        }      
         .links {
             a {
                 display: inline-block;

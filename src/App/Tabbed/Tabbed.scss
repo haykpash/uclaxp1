@@ -1,0 +1,21 @@
+.Tabbed {
+    .tabs {
+         display: flex;
+        .tab {          
+            padding: 10px 20px;
+            border-radius: 5px 5px 0px 0px;
+            margin-right: 10px; 
+        }
+        .tab1 { background-color: rgb(151, 149, 149); }
+        .tab2 { background-color: rgb(238, 238, 213); }
+        .tab3 { background-color: rgb(199, 243, 199); }
+    }
+
+    .content {
+        background-color: rgb(102, 102, 102);
+        padding: 20px; 
+        img{}
+        h2 {color: white;}
+        p  {color: white;}
+    }
+}
