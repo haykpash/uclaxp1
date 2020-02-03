@@ -21,15 +21,19 @@ const tabItems = [
 
 const Tabbed = () => {
 
-    const [currentTab, setCurrentTab] = useState(tabItems[1]);
+    const [currentTab, setCurrentTab] = useState(tabItems[0]);
+
+    const isGrey = (currentTab.title === 'Grey') ? 'tab active':'tab';
+    const isIvory = (currentTab.title === 'Ivory') ? 'tab active':'tab';
+    const isGreen = (currentTab.title === 'Green') ? 'tab active':'tab';
 
     return (
         <div className={ 'Tabbed' }>
 
             <div className="tabs">
-                <div onClick={ () => { setCurrentTab(tabItems[0]) } } className="tab tab1">Grey</div>
-                <div onClick={ () => { setCurrentTab(tabItems[1]) } } className="tab tab2">Ivory</div>
-                <div onClick={ () => { setCurrentTab(tabItems[2]) } } className="tab tab3">Green</div>
+                <div onClick={ () => { setCurrentTab(tabItems[0]) } } className={ isGrey }  >Grey</div>
+                <div onClick={ () => { setCurrentTab(tabItems[1]) } } className={ isIvory } >Ivory</div>
+                <div onClick={ () => { setCurrentTab(tabItems[2]) } } className={ isGreen } >Green</div>
             </div>
 
             <div className="content">

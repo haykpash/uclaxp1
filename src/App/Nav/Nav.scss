@@ -72,7 +72,9 @@
             background-color: rgb(96, 100, 107);
             color: rgb(184, 184, 162);
             border: solid rgb(184, 184, 162);
-
+           }
+           &.active {
+               background-color: rgb(96, 100, 107);
            }
         }
     }
@@ -84,7 +86,6 @@
           .menubars {
               display: none;
           }
-
         .links {
             a {
                 display: inline-block;

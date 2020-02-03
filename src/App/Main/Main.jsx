@@ -1,23 +1,26 @@
 import React from 'react';
 import './Main.scss';
-import Tabbed from '../Tabbed/Tabbed.jsx';
+import { Switch, Route } from 'react-router-dom';
+
+import Photos from '../Pages/Photos.jsx';
+import Contacts from '../Pages/Contacts.jsx';
+import Options from '../Pages/Options.jsx';
 
 const Main = () => {
     return (
         <main className='Main'>
-
-             <Tabbed/>
-           
-           <div className="columns">
-
-               <div className="col col1">col1</div>
-               <div className="col col2">col2</div>
-               <div className="col col3">col3</div>
-               <div className="col col4">col4</div>
-
-            </div>
+             <Switch>               
+                <Route path='/options'>
+                    <Options />
+                </Route>
+                <Route path='/contacts'>
+                   <Contacts />
+                </Route>
+                <Route path='/'>
+                     <Photos />
+                </Route>
+             </Switch>
         </main>
     )
 };
-
 export default Main;
