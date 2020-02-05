@@ -1,10 +1,10 @@
 import React from 'react';
-import './Main.scss';
+//import './Main.scss';
 import { Switch, Route } from 'react-router-dom';
 
-import Photos from '../Pages/Photos.jsx';
+import Photos from '../Pages/Photos/Photos.jsx';
+import Options from '../Pages/Options/Options.jsx';
 import Contacts from '../Pages/Contacts.jsx';
-import Options from '../Pages/Options.jsx';
 
 const Main = () => {
     return (

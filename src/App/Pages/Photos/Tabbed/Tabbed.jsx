@@ -3,17 +3,17 @@ import './Tabbed.scss';
 
 const tabItems = [
     {
-        image: '/img/grey.jpg',
+        image: '/img/Photos/grey.jpg',
         title: 'Grey',
         text: 'This is the Grey color content.',
     },
     {
-        image: '/img/ivory.jpg',
+        image: '/img/Photos/ivory.jpg',
         title: 'Ivory',
         text: 'This is the Ivory color content.',
     },
     {
-        image: '/img/green.jpg',
+        image: '/img/Photos/green.jpg',
         title: 'Green',
         text: 'This is the Green color content.',
     },
@@ -37,7 +37,7 @@ const Tabbed = () => {
             </div>
 
             <div className="content">
-                <img src={ currentTab.image }/>
+                <img src={ currentTab.image } alt={currentTab.title}/>
                 <h2>{ currentTab.title }</h2>
                 <p>{ currentTab.text }</p>
             </div>

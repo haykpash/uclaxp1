@@ -3,15 +3,13 @@ import React from 'react';
 import './Header.scss';
 
 // this is may commponents
-const Header = () => {
-    return (
+const Header =  () => {
+     
+    return (  
      <header className='Header'>
 
-        <div className="menu">   
-            
-            <a href="#search"></a>
-            <a href="#registr"></a>
-            <a href="#bag"></a>
+        <div  className="menu">   
+          
             <a id="#logo">logo</a>         
         </div>
        
