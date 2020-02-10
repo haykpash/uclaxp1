@@ -8,12 +8,8 @@ import { faSearch } from '@fortawesome/free-solid-svg-icons';
 import { faUserAlt} from '@fortawesome/free-solid-svg-icons';
 import { faShoppingBag } from '@fortawesome/free-solid-svg-icons';
 
-
-
 const Nav = () => {
-
     const [showMenu, updateShowMenu] = useState(false);
-
     const handleMenubarsClick = () => {
         console.log('Menubars Click');
 
@@ -23,7 +19,6 @@ const Nav = () => {
             updateShowMenu(false);
         }
     }
-
     const handleWindowResize = () => {
         if (window.innerWidth > 599) {
             updateShowMenu(true);
@@ -31,7 +26,6 @@ const Nav = () => {
             updateShowMenu(false);
         }
     }
-
     useEffect(() =>{
   window.addEventListener('resize', handleWindowResize);
     },[]);

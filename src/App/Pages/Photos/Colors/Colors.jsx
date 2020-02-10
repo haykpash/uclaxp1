@@ -1,5 +1,6 @@
 import React from 'react';
 import './Colors.scss';
+//import '../Pages.scss';
 import { colorType } from './colors.js';
 
 const ColorType = () => {
@@ -18,7 +19,9 @@ const Colors = () => {
     return (
         <div className='Colors'>
           <h2>Colors</h2>
+          <div className='separate'>
           <ColorType />
+          </div>
         </div>
     )
 }

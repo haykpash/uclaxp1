@@ -1,28 +1,26 @@
 .Header {
-          background: rgb(145, 145, 127); 
+    background: rgb(145, 145, 127); 
+       
+   .menu {
+      background-color: rgb(56, 55, 55);
+      text-align: center;
 
-             
-         
-    .menu {
-        background-color: rgb(56, 55, 55);
-        text-align: center;
-
-         a { 
-          font-size: 30px;
-           display: inline-block;
-           color: red;
-           padding: 5px;
-           font-style: italic;
-        }
-    }
+      .logo { 
+         font-size: 30px;
+         display: inline-block;
+         color: red;
+         padding: 5px;
+         font-style: italic;
+      }
+   }
 }
 @media screen and (min-width: 600px) {
    .Header {
             border-radius:  5px;
         .menu {     
           background: rgb(77, 88, 77);
-           a {
-             color: maroon;
+           .logo {
+             color: rgb(236, 161, 161);
              font-style: italic;
              font-size: 30px;
           }
@@ -33,9 +31,9 @@
   .Header {
      .menu {         
         background: rgb(88, 103, 105);
-       a {
-         color: rgb(3, 10, 3);
-         font-style: inherit;
+       .logo {
+         color: rgb(255, 187, 0);
+         font-style: oblique;
          font-size: 30px;
        }
      }

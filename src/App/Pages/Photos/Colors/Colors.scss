@@ -2,6 +2,12 @@
     background-color: rgb(102, 102, 102);
     margin: 50px 0px;
     padding: 20px;
+
+    .separate {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
     
     .ColorType {
         width: 300px ;

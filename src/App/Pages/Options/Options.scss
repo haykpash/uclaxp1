@@ -1,12 +1,18 @@
 .Options {
-    border: solid 1px red;
+   
     background-color: rgb(102, 102, 102);
-    margin: 50px 0px;
-    padding: 20px ;
     
-    .OptionType {
+
+    .container {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: center;
+    }
+    
+    .Option {
         width: 300px ;
         margin: 20px ; 
+
         img {
             display: block;
         }

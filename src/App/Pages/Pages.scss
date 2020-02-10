@@ -1,11 +1,13 @@
 .Pages {
     border: solid 1px rgb(155, 16, 16);
     padding: 20px;
-    margin: 50px auto;
+    margin: 0px auto;
+
     .colums {
+        
         border: solid 1px;
         background-color: rgb(80, 78, 78);
-        //padding: 3px;
+        padding: 10px;
 
         display: flex;
         flex-wrap: wrap;
@@ -26,17 +28,18 @@
 }
 @media screen and (min-width: 600px) {
     .Main{
-        .columns {
+        .colums {
             background-color: rgb(145, 145, 127);
             .col {
                width: 45%;
+              
             }   
         }     
     }
 }
 @media screen and (min-width: 800px) {
     .Main{
-        .columns {
+        .colums {
             background-color: rgb(145, 145, 127);
             .col {
                width: 20%;

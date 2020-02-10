@@ -4,7 +4,7 @@ import { Switch, Route } from 'react-router-dom';
 
 import Photos from '../Pages/Photos/Photos.jsx';
 import Options from '../Pages/Options/Options.jsx';
-import Contacts from '../Pages/Contacts.jsx';
+import Contacts from '../Pages/Contact/Contact.jsx';
 
 const Main = () => {
     return (
