@@ -1,32 +1,13 @@
 .Contact{
-
     padding: 0px;
-
-    border: solid 2px red;
-
+    border: solid 5px blue;
     .row{
-        border: solid 2px green;
+        border: solid 5px green;
     }
-
     .column {
-        border: solid 2px blue;
-    }
-
-    .row1 {
-        display: flex;
-
-        .column { min-height: 300px; }
-        
-        .column1{
-             flex: 1;
-             margin-right: 20px;
-        }
-        .column2 {
-            flex: 2;
-        }
-    }
+        border: solid 5px red;
+    }  
 }
-
 // Median Breikpoint
 @media screen and (min-width: 600px) {
     .contact {

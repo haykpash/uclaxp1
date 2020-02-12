@@ -28,6 +28,7 @@ const Nav = () => {
     }
     useEffect(() =>{
   window.addEventListener('resize', handleWindowResize);
+      handleWindowResize();
     },[]);
 
         return (

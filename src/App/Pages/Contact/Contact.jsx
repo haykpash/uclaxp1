@@ -11,7 +11,6 @@ import GoogleMap from './GoogleMap/GoogleMap.jsx';
 const Contact = () => {
     return (
         <div className = { 'Pages Contact' }>
-            Contacts
             <div className="row row1">
             <div className="column column1">
                 <Address />
@@ -21,7 +20,7 @@ const Contact = () => {
               </div>
            </div>
            <div className="row row2">
-               <GoogleMap />
+                <GoogleMap />
             </div>
         </div>  
     );

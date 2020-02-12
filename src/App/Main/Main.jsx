@@ -1,5 +1,5 @@
 import React from 'react';
-//import './Main.scss';
+import './Main.scss';
 import { Switch, Route } from 'react-router-dom';
 
 import Photos from '../Pages/Photos/Photos.jsx';
