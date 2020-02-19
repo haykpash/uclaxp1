@@ -1,20 +1,28 @@
 .ContactForm {
     border: solid 1px white;
     padding: 20px;
-  
+    
+        &.form-invalid {
+            border: solid 2px black;
+            background-color: rgb(192, 187, 147);
+        }
+        .error-message {
+            border: solid 5px red;
+            background-color: rgb(255, 215, 35);
+            padding: 20px;
+            margin-bottom: 50px;   
+        } 
+
     .form-group {
         margin-bottom: 20px;
 
         .left {
-           // border: solid 1px rgb(16, 107, 36);
             font-weight: bold;
             font-size: 20px;
             padding: 10px;
         }
         input, textarea {
-            
             box-sizing: border-box;
-            //display: block;
             font-size: 20px;
             padding: 10px;
             width: 100%;
@@ -38,11 +46,9 @@
             padding: 0px 20px;
 
             &:hover {background-color: rgb(105, 102, 102);}
-            &:active { background-color: white; color: rgb(1, 1, 230)}
+            &:active { background-color: white; color: rgb(61, 61, 134);}
+            
         }
-            // .right {
-                // border: solid 1px rgb(42, 61, 42);
-            // }
     }
 }
 @media screen and (min-width: 600px) {
