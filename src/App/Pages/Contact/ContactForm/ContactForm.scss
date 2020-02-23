@@ -44,9 +44,15 @@
             font-size: 20px;
             line-height: 50px;
             padding: 0px 20px;
+            
 
-            &:hover {background-color: rgb(105, 102, 102);}
-            &:active { background-color: white; color: rgb(61, 61, 134);}
+            &:hover {
+                background-color: rgb(105, 102, 102);
+            }
+            &:active { 
+                background-color: white; 
+                color: rgb(61, 61, 134);
+            }
             
         }
     }

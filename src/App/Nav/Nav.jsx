@@ -27,13 +27,13 @@ const Nav = () => {
         }
     }
     useEffect(() =>{
-  window.addEventListener('resize', handleWindowResize);
-      handleWindowResize();
+        window.addEventListener('resize', handleWindowResize);
+        handleWindowResize();
     },[]);
 
         return (
-         <nav className='Nav'>       
-            <div className="menubars" onClick={ handleMenubarsClick } >
+            <nav className='Nav'>       
+                <div className="menubars" onClick={ handleMenubarsClick } >
                <FontAwesomeIcon icon={ faBars } />              
             </div>             
             <div className="leftmenu">

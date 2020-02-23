@@ -10,7 +10,7 @@ const Header =  () => {
 
         <div  className="menu">   
           
-            <spam class="logo">logo</spam>         
+            <span className="logo">logo</span>         
         </div>
        
      </header>
