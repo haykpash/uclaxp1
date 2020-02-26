@@ -4,16 +4,16 @@ import './Header.scss';
 
 // this is may commponents
 const Header =  () => {
-     
+    
     return (  
-     <header className='Header'>
-
+        <header className='Header'>
+        
         <div  className="menu">   
-          
+        
             <span className="logo">logo</span>         
         </div>
-       
-     </header>
+        
+        </header>
     );
 }
 // every componoyts must be exported

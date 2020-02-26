@@ -9,12 +9,10 @@
         
         width: 30px;
         height: 30px;
-
         position: absolute;
         right: 20px;
         top: 15px;
         color: rgb(145, 145, 145); 
-
         display: block;
 
         svg {
@@ -25,75 +23,69 @@
             color: white;          
         }
     }
-
+    
     .leftmenu {  
-
-         .left {      
+        
+        .left {      
             width: 30px;  
             height: 30px;
             position: absolute;
-                      
+            
             svg {
-              width: 70%;
-              height: auto;
+                width: 70%;
+                height: auto;
             }
             color: rgb(145, 145, 145);  
-        
+            
             &:hover{
             color: white;          
             }
         }
-            .search { left: 20px; top: 22px; }
-            .registr { left: 70px; top: 22px; }
-            .bag { left:  125px; top: 21px; }
+        .search { left: 20px; top: 22px; }
+        .registr { left: 70px; top: 22px; }
+        .bag { left:  125px; top: 21px; }
     }
     .links {
         text-align: center;
         border-radius: 10px;
-        
-             
-        a {
-          
-           background-color: rgb(43, 41, 41);
-           color: rgb(184, 184, 162);
-          // height: 35px;
-               
-           display: block;
-           padding: 5px;
-           border-radius: 5px;
-           margin: 10px;
-           font-size: 25px;
-
-           text-decoration: none;
-           text-transform: uppercase;
-           border: solid rgb(145, 145, 145);
-
-           transition: all .5s;
-
-           &:hover {
+            a {
+            background-color: rgb(43, 41, 41);
+            color: rgb(184, 184, 162);
+            // height: 35px;
+                
+            display: block;
+            padding: 5px;
+            border-radius: 5px;
+            margin: 10px;
+            font-size: 25px;
+            text-decoration: none;
+            text-transform: uppercase;
+            border: solid rgb(145, 145, 145);
+            transition: all .5s;
+            &:hover {
             background-color: rgb(105, 102, 102);
             //color: white;
             //border: solid white;
-           }
-           &.active {
-               background-color: rgb(105, 102, 102);
-               font-size: (32px); 
-               border: solid rgb(129, 129, 115);
-               color: rgb(184, 184, 162);
-               font-weight: bold;             
-           }
+            }
+            &.active {
+                background-color: rgb(182, 180, 180);
+                font-size: (32px); 
+                border: solid rgb(31, 28, 28);
+                color: rgb(36, 34, 34);
+                font-weight: bold;             
+            }
         }
     }
 }
 @media screen and (min-width: 600px) {
     .Nav {
-        background-color: rgb(134, 155, 117);
+        background-color: rgb(192, 206, 182);
         height: 80px;
-          .menubars {
-              display: none;
-          }
+        .menubars {
+            display: none;
+        }
         .links {
-           
+        
             a {
                 display: inline-block;
                 color: rgb(20, 243, 68);
@@ -103,13 +95,13 @@
 }
 @media screen and (min-width: 800px) {
     .Nav {
-        background-color: rgb(122, 121, 100);
-       
+        background-color: rgb(214, 213, 186);
+        
         .menubars{
             font-size: 40px;
         }      
         .links {
-           
+        
             a {
                 display: inline-block;
                 color: rgb(199, 197, 197);
@@ -119,10 +111,10 @@
 }
 @media screen and (max-width: 599px) {
     .Nav {
-              
+        
         .links {  
             a {
-               height: (35px); 
+                height: (35px); 
             }      
         }
     }

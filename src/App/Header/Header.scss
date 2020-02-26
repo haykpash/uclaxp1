@@ -1,6 +1,6 @@
 .Header {
-    background: rgb(145, 145, 127); 
-       
+   background: rgb(207, 207, 152); 
+      
    .menu {
       background-color: rgb(56, 55, 55);
       text-align: center;
@@ -17,25 +17,25 @@
 @media screen and (min-width: 600px) {
    .Header {
             border-radius:  5px;
-        .menu {     
-          background: rgb(77, 88, 77);
-           .logo {
-             color: rgb(236, 161, 161);
-             font-style: italic;
-             font-size: 30px;
-          }
-       }
-    }
+      .menu {     
+         background: rgb(41, 49, 41);
+         .logo {
+            color: rgb(252, 6, 6);
+            font-style: italic;
+            font-size: 30px;
+         }
+      }
+   }
 } 
 @media screen and (min-width: 800px) {
-  .Header {
-     .menu {         
-        background: rgb(88, 103, 105);
-       .logo {
-         color: rgb(255, 187, 0);
-         font-style: oblique;
-         font-size: 30px;
-       }
-     }
+.Header {
+      .menu {         
+         background: rgb(44, 49, 49);
+         .logo {
+            color: rgb(250, 185, 6);
+            font-style: oblique;
+            font-size: 30px;
+         }
+      }
    }
 }

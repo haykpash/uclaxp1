@@ -7,18 +7,27 @@ import { faBars } from '@fortawesome/free-solid-svg-icons';
 import { faSearch } from '@fortawesome/free-solid-svg-icons';
 import { faUserAlt} from '@fortawesome/free-solid-svg-icons';
 import { faShoppingBag } from '@fortawesome/free-solid-svg-icons';
+//import { faTimes } from '@fortawesome/free-solid-svg-icons';
 
 const Nav = () => {
     const [showMenu, updateShowMenu] = useState(false);
+     
+   // const [showTimes, setShowTimes] = useState(false);
+   // const [showBars, setShowBars] = useState(true);
+
     const handleMenubarsClick = () => {
         console.log('Menubars Click');
 
         if (showMenu === false) {
             updateShowMenu(true);
+           // setShowTimes(true);
+           // setShowBars(false);
         } else {
             updateShowMenu(false);
+
         }
     }
+    
     const handleWindowResize = () => {
         if (window.innerWidth > 599) {
             updateShowMenu(true);
@@ -34,8 +43,14 @@ const Nav = () => {
         return (
             <nav className='Nav'>       
                 <div className="menubars" onClick={ handleMenubarsClick } >
-               <FontAwesomeIcon icon={ faBars } />              
-            </div>             
+                <FontAwesomeIcon icon={  faBars } /> 
+            </div> 
+
+          
+           
+
+              
+
             <div className="leftmenu">
                <div className="left search"> <FontAwesomeIcon icon={ faSearch } /></div>
                <div className="left registr"> <FontAwesomeIcon icon={ faUserAlt } /> </div>
