@@ -12,16 +12,16 @@ const Contact = () => {
     return (
         <div className = { 'Pages Contact' }>
             <div className="row row1">
-            <div className="column column1">
-                <Address />
-               </div>
-               <div className="column column2">
-                <ContactForm />
-              </div>
-           </div>
-           <div className="row row2">
-                <GoogleMap />
+                <div className="column column1">
+                    <Address />
+                </div>
+                    <div className="column column2">
+                        <ContactForm />
+                    </div>
             </div>
+                <div className="row row2">
+                    <GoogleMap />
+                </div>
         </div>  
     );
 }

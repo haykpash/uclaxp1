@@ -1,11 +1,11 @@
 import React, {useRef, useState} from 'react';
-import './ContactForm.scss';
-import { emailCheck } from '../../../common/utilities.js';
+import './Login.scss';
+import { emailCheck } from '../../common/utilities.js';
 import classnames from 'classnames';
 import keycode from 'keycode';
-import API from '../../../common/API.js';
+import API from '../../common/API.js';
 
-const ContactForm = () => {
+const Login = () => {
     // State
     const [emailIsValid, updateEmailIsValid] = useState(true);
     const [formIsValid, updateFormIsValid] = useState(false);
@@ -51,7 +51,7 @@ const ContactForm = () => {
                 message: messageRef.current.value,
             }
 
-            API.post('email/send',postData).then((result) => {
+            API.post('login/send',postData).then((result) => {
             console.log('Posting the data', result);
             });
 
@@ -88,7 +88,7 @@ const ContactForm = () => {
     // const theCladdname = (formisvalid) ? 'xontactForm form-valid': 'ContaactForm form-invalid';
 
     const theClassname = classnames ({
-        'ContactForm': true,
+        'Login': true,
         'form-valid': formIsValid,
         'form-invalid': !formIsValid,
     });
@@ -114,7 +114,7 @@ const ContactForm = () => {
                     ref={ emailRef }
                     name="email" 
                     id="email" 
-                    placeholder="email@somedomain.com" 
+                    placeholder="email" 
                     onChange={ validateEmail }
                 />
             </div>
@@ -124,7 +124,10 @@ const ContactForm = () => {
                 <label htmlFor="message">Message</label> 
             </div>
             <div className="right">
-                <textarea ref={ messageRef } name="message" id="message" placeholder="your mesage goes here..." />
+                <input ref={ messageRef } 
+                name="pasword" 
+                id="pasword" 
+                placeholder="pasword" />
             </div>
         </div>
         <div className="form-group">
@@ -134,10 +137,10 @@ const ContactForm = () => {
                 tab-index={0}
                     onClick={ handleFormSubmit }
                     onKeyDown={ handleKeyDown }
-                >Send Email</button>
+                >Login</button>
                 </div>
             </div>     
         </div>
     );
 }
-export default ContactForm;
+export default Login;

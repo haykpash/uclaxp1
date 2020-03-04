@@ -4,7 +4,7 @@ import './Colors.scss';
 import API from '../../../common/API.js';
 
 const ColorType = () => {
-     
+    
     // 1. set up state to keep trak of data from server
     const [colorType, setcolorType] = useState([ ]);
     
@@ -32,10 +32,10 @@ const ColorType = () => {
 const Colors = () => {
     return (
         <div className='Colors'>
-          <h2>Colors</h2>
-          <div className='separate'>
-          <ColorType />
-          </div>
+            <h2>Colors</h2>
+            <div className='separate'>
+            <ColorType />
+            </div>
         </div>
     )
 }

@@ -13,14 +13,14 @@ const App = () => {
     
     return (
         <Router>
-             <div className='App'> 
+            <div className='App'> 
                 <Header />
                 <Nav />
                 <Main />
                 <Footer />
-             </div>
+            </div>
         </Router>
     )
 }
 
-     export default App;
+export default App;

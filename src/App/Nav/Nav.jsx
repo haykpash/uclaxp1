@@ -7,27 +7,19 @@ import { faBars } from '@fortawesome/free-solid-svg-icons';
 import { faSearch } from '@fortawesome/free-solid-svg-icons';
 import { faUserAlt} from '@fortawesome/free-solid-svg-icons';
 import { faShoppingBag } from '@fortawesome/free-solid-svg-icons';
-//import { faTimes } from '@fortawesome/free-solid-svg-icons';
 
 const Nav = () => {
     const [showMenu, updateShowMenu] = useState(false);
-     
-   // const [showTimes, setShowTimes] = useState(false);
-   // const [showBars, setShowBars] = useState(true);
-
+    
     const handleMenubarsClick = () => {
         console.log('Menubars Click');
-
+        
         if (showMenu === false) {
             updateShowMenu(true);
-           // setShowTimes(true);
-           // setShowBars(false);
         } else {
             updateShowMenu(false);
-
         }
     }
-    
     const handleWindowResize = () => {
         if (window.innerWidth > 599) {
             updateShowMenu(true);
@@ -35,33 +27,42 @@ const Nav = () => {
             updateShowMenu(false);
         }
     }
+    const [showLogin, updateShowLogin] = useState(false);
+
+    const handleLoginClick = () => {
+        console.log ('Login & Register');
+
+        if (showLogin === false) {
+            updateShowLogin(true);
+        }
+    }
+
     useEffect(() =>{
         window.addEventListener('resize', handleWindowResize);
         handleWindowResize();
     },[]);
-
+    
         return (
             <nav className='Nav'>       
                 <div className="menubars" onClick={ handleMenubarsClick } >
                 <FontAwesomeIcon icon={  faBars } /> 
             </div> 
-
-          
-           
-
-              
-
+            
             <div className="leftmenu">
-               <div className="left search"> <FontAwesomeIcon icon={ faSearch } /></div>
-               <div className="left registr"> <FontAwesomeIcon icon={ faUserAlt } /> </div>
-               <div className="left bag"> <FontAwesomeIcon icon={ faShoppingBag } /></div>       
+                <div className="left search"> <FontAwesomeIcon icon={ faSearch } /></div>
+                
+                <div className="left registr" onClick={handleLoginClick} >
+                <FontAwesomeIcon icon={ faUserAlt } /></div>
+                
+                <div className="left bag"> <FontAwesomeIcon icon={ faShoppingBag } /></div>       
             </div>  
             { 
-                 showMenu && 
+                showMenu && 
             <div className="links">
                 <NavLink to='/' exact>Photos</NavLink>
                 <NavLink to='/options'>Options</NavLink>
                 <NavLink to='/contacts'>Contacts</NavLink>
+                <NavLink to='/login'>Login</NavLink>
             </div>  
             }   
         </nav>
